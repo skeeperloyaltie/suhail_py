@@ -14,6 +14,7 @@ address = str(input("Enter address: "))
 phone = str(input("Enter phone: "))
 department = str(input("Enter department: "))
 type_of_patient = str(input("Enter type_of_patient: "))
+
 class hospital:
     
     def __init__(self):
@@ -57,7 +58,7 @@ class nurses(employees):
 # Menu for input
 def main():
     choice = int(input("Choose menu number [1, 2, 3] to determine input category: "))
-
+    
     if choice == 1:
         print("Enter Doctors information: ")
         # Enter object values
@@ -77,6 +78,12 @@ def main():
     else:
         print("Wrong choice: ")
         return main()
+    
+
+
+
+   
+
 
 print(main())
 
